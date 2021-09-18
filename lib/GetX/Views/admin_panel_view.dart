@@ -8,6 +8,7 @@ import 'package:grinta/GetX/Utils/colors.dart';
 import 'package:grinta/GetX/Views/categories_view.dart';
 import 'package:grinta/GetX/Views/manage_branches_view.dart';
 import 'package:grinta/GetX/Views/manage_categories_view.dart';
+import 'package:grinta/GetX/Views/manage_products_view.dart';
 import 'package:grinta/screen/manage_categories.dart';
 import 'package:grinta/screen/show_all_branches.dart';
 
@@ -70,10 +71,6 @@ class AdminPanelView extends StatelessWidget {
                         child: ElevatedButton(
                           onPressed: () {
                             Get.to(() => ManageBranchesView());
-                            // Navigator.push(
-                            //     context,
-                            //     MaterialPageRoute(
-                            //         builder: (context) => ShowAllBranches()));
                           },
                           style:
                               ElevatedButton.styleFrom(primary: Colors.black87),
@@ -91,14 +88,10 @@ class AdminPanelView extends StatelessWidget {
                           onPressed: () {
                             Get.to(() => ManageCategoriesView(),
                                 binding: CategoriesBinding());
-                            // Navigator.push(
-                            //     context,
-                            //     MaterialPageRoute(
-                            //         builder: (context) => ShowAllCategory()));
                           },
                           style:
                               ElevatedButton.styleFrom(primary: Colors.black87),
-                          child: Text(
+                          child: const Text(
                             "Manage Categories",
                             style: TextStyle(
                                 fontSize: 18, fontWeight: FontWeight.bold),
@@ -110,6 +103,8 @@ class AdminPanelView extends StatelessWidget {
                         width: double.infinity,
                         child: ElevatedButton(
                           onPressed: () {
+                            Get.to(() => ProductsCategoriesView(),
+                                binding: CategoriesBinding());
                             // Navigator.push(
                             //     context,
                             //     MaterialPageRoute(

@@ -30,12 +30,6 @@ class CategoriesView extends StatelessWidget {
           IconButton(
             onPressed: () {
               Get.to(() => AdminLoginView());
-              // Navigator.push(
-              //     context,
-              //     MaterialPageRoute(
-              //         builder: (context) => AdminLoginScreen(
-              //               branchName: widget.branchName,
-              //             )));
             },
             icon: const Icon(FontAwesome5.user_shield, size: 20),
           ),

@@ -26,12 +26,6 @@ class HomeView extends StatelessWidget {
                   onTap: () {
                     Get.to(() => CategoriesView(),
                         binding: CategoriesBinding());
-                    // Navigator.push(
-                    //     context,
-                    //     MaterialPageRoute(
-                    //         builder: (context) => MenuScreen(
-                    //             // branchName: widget.branchName,
-                    //             )));
                   },
                   child: Container(
                     width: size.width * 0.33,

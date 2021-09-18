@@ -1,13 +1,10 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter/rendering.dart';
 import 'package:get/get.dart';
-import 'package:grinta/GetX/Controllers/categories_view_model.dart';
 import 'package:grinta/GetX/Models/branch_model.dart';
 import 'package:grinta/GetX/Models/categories_model.dart';
 import 'package:grinta/GetX/Models/products_model.dart';
 import 'package:grinta/GetX/Utils/colors.dart';
 import 'package:grinta/GetX/Utils/global_variables.dart';
-import 'package:grinta/GetX/Views/manage_categories_view.dart';
 
 class Database {
   FirebaseFirestore _firestore = FirebaseFirestore.instance;
@@ -104,5 +101,27 @@ class Database {
         .collection('allCategories')
         .doc(name)
         .set(category);
+  }
+
+  Future<void> addProduct(products, name) async {
+    await _firestore
+        .collection('allBranches')
+        .doc(menuBranch.value)
+        .collection('allCategories')
+        .doc(categoryName.value)
+        .collection('allProducts')
+        .doc(name)
+        .set(products);
+  }
+
+  Future<void> deleteProduct(String id) async {
+    await _firestore
+        .collection('allBranches')
+        .doc(menuBranch.value)
+        .collection('allCategories')
+        .doc(categoryName.value)
+        .collection('allProducts')
+        .doc(id)
+        .delete();
   }
 }
