@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "784946029250",
+    "project_id": "grinta-coffee-a6baa",
+    "storage_bucket": "grinta-coffee-a6baa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784946029250:android:b0f958bd0d1fc890ded15b",
+        "android_client_info": {
+          "package_name": "com.grinta.grinta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "784946029250-dsv5q78bkd7cjnsbmo2bl4pgg4i431j5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5X70g1c74NCENvDFQe1nC0ikW67i_5_c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "784946029250-dsv5q78bkd7cjnsbmo2bl4pgg4i431j5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
