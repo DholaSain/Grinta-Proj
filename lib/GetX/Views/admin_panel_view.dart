@@ -9,8 +9,6 @@ import 'package:grinta/GetX/Views/categories_view.dart';
 import 'package:grinta/GetX/Views/manage_branches_view.dart';
 import 'package:grinta/GetX/Views/manage_categories_view.dart';
 import 'package:grinta/GetX/Views/manage_products_view.dart';
-import 'package:grinta/screen/manage_categories.dart';
-import 'package:grinta/screen/show_all_branches.dart';
 
 class AdminPanelView extends StatelessWidget {
   const AdminPanelView({Key? key}) : super(key: key);

@@ -9,8 +9,6 @@ import 'package:grinta/GetX/Utils/colors.dart';
 import 'package:grinta/GetX/Utils/global_variables.dart';
 import 'package:grinta/GetX/Views/admin_login_view.dart';
 import 'package:grinta/GetX/Views/products_view.dart';
-import 'package:grinta/screen/admin_login.dart';
-import 'package:grinta/screen/view_produect.dart';
 
 class CategoriesView extends StatelessWidget {
   CategoriesView({Key? key}) : super(key: key);

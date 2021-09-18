@@ -5,8 +5,7 @@ import 'package:fluttericon/font_awesome5_icons.dart';
 import 'package:get/get.dart';
 import 'package:grinta/GetX/Utils/colors.dart';
 import 'package:grinta/GetX/Views/admin_panel_view.dart';
-import 'package:grinta/screen/admin_home.dart';
-import 'package:grinta/screen/forget_password.dart';
+import 'package:grinta/GetX/Views/forgot_password.dart';
 
 class AdminLoginView extends StatelessWidget {
   AdminLoginView({Key? key}) : super(key: key);
@@ -84,11 +83,7 @@ class AdminLoginView extends StatelessWidget {
                                     fontWeight: FontWeight.bold)))),
                     TextButton(
                         onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) =>
-                                      const ForgetPassword()));
+                          Get.to(() => const ForgotPassword());
                         },
                         child: const Text("Forget your password?",
                             style: TextStyle(color: Colors.red)))

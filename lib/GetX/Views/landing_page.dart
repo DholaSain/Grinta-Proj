@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:grinta/GetX/Views/select_branch.dart';
-import 'package:grinta/screen/branch_selection.dart';
 import 'package:splash_screen_view/SplashScreenView.dart';
 
 class LandingView extends StatelessWidget {
