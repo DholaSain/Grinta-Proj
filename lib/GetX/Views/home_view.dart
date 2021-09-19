@@ -47,7 +47,9 @@ class HomeView extends StatelessWidget {
                 ),
                 SizedBox(
                   height: size.height * 0.1,
-                )
+                ),
+                // SizedBox(height: 15,),
+              IconButton(onPressed: (){Get.back();}, icon:const Icon(Icons.arrow_back_ios, color: kBlackColor,)),
               ],
             ),
           ),

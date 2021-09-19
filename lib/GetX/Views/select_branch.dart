@@ -125,6 +125,7 @@ class SelectBranch extends StatelessWidget {
                   );
                 }
               }),
+              
               // Obx(
               //   () {
               //     if (branchSelectionController.allBranchesNames!.isNotEmpty) {

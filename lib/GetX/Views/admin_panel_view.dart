@@ -111,7 +111,7 @@ class AdminPanelView extends StatelessWidget {
                           },
                           style:
                               ElevatedButton.styleFrom(primary: Colors.black87),
-                          child: Text(
+                          child: const Text(
                             "Manage Products",
                             style: TextStyle(
                                 fontSize: 18, fontWeight: FontWeight.bold),
@@ -132,10 +132,5 @@ class AdminPanelView extends StatelessWidget {
   Future<void> _signOut() async {
     await FirebaseAuth.instance.signOut();
     Get.to(() => CategoriesView());
-    // Navigator.pushAndRemoveUntil(
-    //     context,
-    //     MaterialPageRoute(
-    //         builder: (context) => MenuScreen(branchName: widget.branchName)),
-    //     (route) => false);
   }
 }
